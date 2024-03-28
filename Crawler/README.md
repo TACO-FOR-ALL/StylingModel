@@ -23,7 +23,7 @@ configuration parameters들을 포함합니다.
 ### `parser.py`
 request로 받아온 데이터에서 필요한 HTML content를 파싱하는 역할을 합니다.  
 
-### `cralwer.py`
+### `main.py`
 main script
 
 ### `storage.py`

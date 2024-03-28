@@ -1,12 +1,11 @@
-# crawler.py
-
-import scrapy
-import itertools
-from scrapy.http import TextResponse
+# main.py
 from config import BASE_URL, STYLE_TYPES,SORT, HEADER
-from utils import fetch_page
-from parser import parse_outfits
-from storage import store_outfits
+import itertools
+import scrapy
+from scrapy.http import TextResponse
+from utils.utils import fetch_page
+from utils.parser import parse_outfits
+from utils.storage import store_outfits
 
 def crawl_outfits():
     headers = HEADER

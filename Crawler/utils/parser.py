@@ -1,4 +1,5 @@
 #parser.py
+import scrapy
 from scrapy.http import TextResponse
 
 def parse_outfits(response):
