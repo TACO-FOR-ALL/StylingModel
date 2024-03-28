@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.python-version
+
+.DS_Store
+Thumbs.db
+*.swp
+goorm.manifest
+
+
+output.html
