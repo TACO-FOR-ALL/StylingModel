@@ -1,4 +1,4 @@
-BASE_URL = "https://www.musinsa.com/app/styles/lists"
+BASE_URLS = ["https://www.musinsa.com/app/styles/lists"]
 STYLE_TYPES = ["highteen", "romantic"] 
 SORT = ["COMMENT_COUNT"]
 HEADER = {

@@ -11,5 +11,12 @@ def fetch_page(url,headers):
         print(f"Failed to fetch {url}")
         return None
 
-if __name__ == "__main__":
-    fetch_page()
+def check_website(url):
+    if 'musinsa' in url:
+        return 'musinsa'
+    elif '29cm' in url:
+        return '29cm'
+    elif 'lfmall' in url:
+        return 'lfmall'
+    else:
+        return None

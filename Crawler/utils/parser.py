@@ -2,6 +2,9 @@
 import scrapy
 from scrapy.http import TextResponse
 
+# TODO : 
+# 1. iterate over pages.
+
 def parse_outfits(response):
     outfits = []
     outfit_elements = response.xpath('//li[@class="style-list-item"]')
@@ -23,13 +26,12 @@ def parse_outfits(response):
 
         # Extracting 조회수 from the <span> tag with class "post-information__text"
         views_text  = outfit_element.xpath('.//span[@class="post-information__text"][2]/text()').get()
-
         # Remove "조회" prefix and convert to integer
         views = int(views_text.replace('조회', '').replace(',', '')) if views_text else None
-
+        
         # Extracting 댓글수 from the <span> tag with class "post-information__text"
-        comments_text = outfit_element.xpath('.//span[@class="post-information__text"][3]/text()').get()
-
+        # comments_text = outfit_element.xpath('.//span[@class="post-information__text"][3]/text()').get()
+        comments_text = outfit_element.xpath('.//span[contains(text(), "댓글")]/text()').get()
         # Remove "댓글" prefix and convert to integer
         comments = int(comments_text.replace('댓글', '').replace(',', '')) if comments_text else None
 
