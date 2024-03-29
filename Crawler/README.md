@@ -28,4 +28,10 @@ main script
 
 ### `storage.py`
 크롤링한 데이터들을 로컬이나 클라우드 저장소로 옮기는 역할을 합니다.  
+각 쇼핑몰마다 directory를 만들고,
+각 directory에서의 파일명은 `{카테고리}-outfits.csv` 입니다.  
+예) data/musinsa/highteen_outfits.csv
 
+## TODO
+1. iterate over pages
+2. 
