@@ -2,7 +2,7 @@ import csv
 import os
 from .utils import check_website
 
-def store_outfits(outfits, url, style_type):
+def store_outfits(outfits, url, style_type, page):
     # Define the field names for the CSV file
     fieldnames = ['상품번호', '코디 페이지 링크', '코디 사진 링크', '업로드 날짜', '코디 이름', '조회수', '댓글수', '성별']
     
@@ -20,7 +20,7 @@ def store_outfits(outfits, url, style_type):
     output_directory = os.path.join(script_dir, '..', 'data', website)
     os.makedirs(output_directory, exist_ok=True)  # Create the directory if it doesn't exist
     
-    output_file = os.path.join(output_directory, f'{style_type}-outfits.csv')
+    output_file = os.path.join(output_directory, f'{style_type}{page}-outfits.csv')
 
     url = url[:-5] + "views/"
     # Open the CSV file in write mode
