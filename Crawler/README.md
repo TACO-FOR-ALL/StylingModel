@@ -34,4 +34,4 @@ main script
 
 ## TODO
 1. iterate over pages
-2. 
+2. 성별
