@@ -1,0 +1,45 @@
+from config import BASE_URLS, STYLE_TYPES, SORT, HEADER
+import itertools
+import scrapy
+import time
+from scrapy.http import TextResponse
+from utils.utils import fetch_page
+from utils.parser import parse_outfits
+from utils.storage import store_outfits
+
+# musinsa
+def crawl_outfits_musinsa(verbose):
+    headers = HEADER
+    combinations = itertools.product(BASE_URLS,STYLE_TYPES,SORT)
+    for base_url, style_type, sort_method in combinations:
+        # find out how many pages are there
+        url = f"{base_url}?style_type={style_type}&sort={sort_method}&page=1"
+        req = fetch_page(url,headers)
+        response_html = TextResponse(req.url, body=req.text, encoding="utf-8")
+        
+        # Extract the number of pages text
+        page_info_text = response_html.xpath('//span[@class="pagingNumber"]/span[@class="totalPagingNum"]/text()').get()
+
+        # Extract the number of pages from the text
+        number_of_pages = int(page_info_text.strip())
+
+        for page in range(number_of_pages):
+            # time.sleep(2) # 필요없으면 삭제해도 됌
+            url = f"{base_url}?style_type={style_type}&sort={sort_method}&page={page}"
+            print(f"start fetching {url}") if verbose else None
+            req = fetch_page(url,headers)
+            response_html = TextResponse(req.url, body=req.text, encoding="utf-8")
+            if response_html:
+                outfits = parse_outfits(response_html)
+                store_outfits(outfits, base_url, style_type, page+1)
+                print("parsing and storing successful") if verbose else None
+            else :
+                print("sth went wrong.")
+
+#29cm
+def crawl_outfits_29cm(verbose):
+    print("Haven't implemented yet")
+
+#lfmall
+def crawl_outfits_lfmall(verbose):
+    print("Haven't implemented yet")

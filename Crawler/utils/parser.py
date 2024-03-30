@@ -2,9 +2,6 @@
 import scrapy
 from scrapy.http import TextResponse
 
-# TODO : 
-# 1. iterate over pages.
-
 def parse_outfits(response):
     outfits = []
     outfit_elements = response.xpath('//li[@class="style-list-item"]')
@@ -34,7 +31,8 @@ def parse_outfits(response):
         comments_text = outfit_element.xpath('.//span[contains(text(), "댓글")]/text()').get()
         # Remove "댓글" prefix and convert to integer
         comments = int(comments_text.replace('댓글', '').replace(',', '')) if comments_text else None
-
+        comments = comments if comments else 0
+        
         gender = "woman"
 
         # Constructing outfit dictionary
