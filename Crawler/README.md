@@ -32,6 +32,20 @@ main script
 각 directory에서의 파일명은 `{카테고리}-outfits.csv` 입니다.  
 예) data/musinsa/highteen_outfits.csv
 
+## How to use
+```
+python main.py {website} --verbose
+```
+로 간단하게 실행 가능합니다.  
+`website`는 "musinsa", "29cm", "lfmall" 중 하나를 고르시면 되고, 2개이상 크롤링도 가능합니다.  
+아무것도 입력하지 않을경우 default값은 musinsa입니다.  
+
+`--verbose`는 크롤링하는 과정을 세세하게 출력할지 말지를 결정하는 flag입니다.  
+
+## CAUTION!
+혹시 몰라서 crawl하는 도중에, 매`fetch_page`전에 2초의 쉬는 텀을 가지도록 하였습니다.  
+답답하신 분들은 주석처리하고 실행하셔도 좋습니다.  
+
+
 ## TODO
-1. iterate over pages
-2. 성별
+1. 성별

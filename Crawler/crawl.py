@@ -24,7 +24,7 @@ def crawl_outfits_musinsa(verbose):
         number_of_pages = int(page_info_text.strip())
 
         for page in range(number_of_pages):
-            # time.sleep(2) # 필요없으면 삭제해도 됌
+            time.sleep(2) # 필요없으면 삭제해도 됌
             url = f"{base_url}?style_type={style_type}&sort={sort_method}&page={page}"
             print(f"start fetching {url}") if verbose else None
             req = fetch_page(url,headers)
