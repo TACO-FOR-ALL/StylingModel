@@ -4,7 +4,7 @@ import scrapy
 import time
 from scrapy.http import TextResponse
 from utils.utils import fetch_page
-from utils.parser import parse_outfits
+from utils.parser import parse_outfits_musinsa
 from utils.storage import store_outfits
 
 # musinsa
@@ -30,7 +30,7 @@ def crawl_outfits_musinsa(verbose):
             req = fetch_page(url,headers)
             response_html = TextResponse(req.url, body=req.text, encoding="utf-8")
             if response_html:
-                outfits = parse_outfits(response_html)
+                outfits = parse_outfits_musinsa(response_html)
                 store_outfits(outfits, base_url, style_type, page+1)
                 print("parsing and storing successful") if verbose else None
             else :

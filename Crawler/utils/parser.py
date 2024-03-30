@@ -2,7 +2,7 @@
 import scrapy
 from scrapy.http import TextResponse
 
-def parse_outfits(response):
+def parse_outfits_musinsa(response):
     outfits = []
     outfit_elements = response.xpath('//li[@class="style-list-item"]')
     for outfit_element in outfit_elements:
