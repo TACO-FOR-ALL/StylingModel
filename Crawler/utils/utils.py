@@ -1,7 +1,7 @@
 # utils.py
 
 import requests
-def fetch_page(url,headers):
+def fetch_page(url, headers):
     req = requests.get(url, headers = headers)
     if req.status_code == 200:
         # with open("output.html", "w", encoding="utf-8") as file:
