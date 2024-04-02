@@ -1,10 +1,13 @@
 import csv
 import os
+from datetime import datetime
+
 from .utils import check_website
+from .utils import format_date
 
 def store_outfits(outfits, url, style_type, page):
     # Define the field names for the CSV file
-    fieldnames = ['상품번호', '코디 페이지 링크', '코디 사진 링크', '업로드 날짜', '코디 이름', '조회수', '댓글수', '성별']
+    fieldnames = ['id', 'title', 'sex', 'style', 'date', 'views', 'model', 'comment', 'link', 'imagelink']
     
     # Define the output file path relative to the script directory
     script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -33,5 +36,7 @@ def store_outfits(outfits, url, style_type, page):
 
         # Write the outfits to the CSV file
         for outfit in outfits:
-            outfit['코디 페이지 링크'] = url + outfit['상품번호']
+            outfit['link'] = url + outfit['id']
+            outfit['style'] = style_type
+            outfit['date'] = format_date(outfit['date'])
             writer.writerow(outfit)

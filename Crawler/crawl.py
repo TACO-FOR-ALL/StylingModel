@@ -11,6 +11,7 @@ def crawl_outfits_musinsa(verbose):
     for base_url, style_type, sort_method in combinations:
         # 남성 & 여성
         # TODO
+        
         # find out how many pages are there
         url = f"{base_url}?style_type={style_type}&sort={sort_method}&page=1"
         req = utils.fetch_page(url,headers)

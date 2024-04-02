@@ -6,6 +6,11 @@ def parse_outfits_musinsa(response):
     outfits = []
     outfit_elements = response.xpath('//li[@class="style-list-item"]')
     for outfit_element in outfit_elements:
+        
+        # Extracting 모델 from
+        model_text = outfit_element.xpath('div[@class="style-list-model"]/text()').get()
+        model = model_text.replace('모델 : ','') if model_text else None
+        
         # Extracting 상품번호 from the onclick attribute of the <a> tag
         product_id = outfit_element.xpath('.//a/@onclick').re_first(r"goView\('(\d+)'\)")
 
@@ -33,18 +38,19 @@ def parse_outfits_musinsa(response):
         comments = int(comments_text.replace('댓글', '').replace(',', '')) if comments_text else None
         comments = comments if comments else 0
         
-        gender = "woman"
+        gender = "F"
 
         # Constructing outfit dictionary
         outfit = {
-            '상품번호': product_id,
-            '코디 페이지 링크': page_link,
-            '코디 사진 링크': image_link,
-            '업로드 날짜': upload_date,
-            '코디 이름': outfit_name,
-            '조회수': views,
-            '댓글수': comments,
-            '성별': gender
+            'id': product_id,
+            'title' : outfit_name,
+            'sex' : gender,
+            'date' : upload_date,
+            'views' : views,
+            'model' : model,
+            'comment' : comments,
+            'link' : page_link,
+            'imagelink' : image_link
         }
         # print(outfit)
         outfits.append(outfit)
