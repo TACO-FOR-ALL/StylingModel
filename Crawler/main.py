@@ -1,7 +1,6 @@
 #main.py 
 import argparse
 from crawl import crawl_outfits_musinsa, crawl_outfits_29cm, crawl_outfits_lfmall
-from utils.download import download_images
 
 parser = argparse.ArgumentParser()
 parser.add_argument('website', nargs='*', type=str, default=['musinsa'],
@@ -9,7 +8,7 @@ parser.add_argument('website', nargs='*', type=str, default=['musinsa'],
 parser.add_argument('--verbose', action='store_true',
                     help='Enable verbose mode')
 
-parser.add_agurment('--download',actoin='store_true',
+parser.add_argument('--download',action='store_true',
                    help='Enable verbose mode')
 
 args = parser.parse_args()
