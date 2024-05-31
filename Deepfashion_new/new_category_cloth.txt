@@ -1,0 +1,13 @@
+11
+category_name  category_type
+Jacket	    1
+Blouse	    1
+Shirt	    1
+Top	        1
+Tee	        1
+Jeans	    2
+Pants	    2
+Shorts	    2
+Skirt	    2
+Dress	    3
+Coat	    3

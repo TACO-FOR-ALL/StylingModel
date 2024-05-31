@@ -1,0 +1,31 @@
+floral,1,abstract floral,1,abstract floral print,1,belted floral,4,belted floral print,4,chiffon floral,1,crochet floral,1,ditsy floral,1,ditsy floral print,1,embroidered floral,1,floral,1,floral flutter,1,floral knit,2,floral lace skater,3,floral maxi,3,floral mesh,2,floral midi,3,floral mini,3,floral paisley,1,floral pattern,1,floral peasant,3,floral pleated,3,floral print,1,floral print skater,3,floral shift,3,floral skater,3,floral surplice,4,floral textured,1,floral-embroidered,1
+graphic,1,graphic,1,graphic muscle,3,graphic racerback,4
+striped,1,back striped,4,boxy striped,1,classic striped,1,knit striped,1,nautical striped,1,neck striped,4,rugby striped,1,striped,1,striped trapeze,3,striped v-neck,4,varsity-striped,1
+embroidered,1,crochet embroidered,2,embroidered,2,embroidered fit,3,embroidered floral,1,embroidered gauze,2,embroidered gauze peasant,3,embroidered lace,2,embroidered maxi,3,embroidered mesh,2,embroidered peasant,3,embroidered shift,3,embroidered woven,2,floral-embroidered,1
+pleated,1,box-pleated,3,chiffon pleated,3,floral pleated,3,lace pleated,2,pintuck pleated,2,pleated,2,pleated skater,3,pleated woven,2
+solid,1,solid,5
+lattice,1,lattice,2
+print,1,abstract chevron print,1,abstract floral print,1,abstract geo print,1,abstract print,1,abstract printed,1,animal print,1,bandana print,1,baroque print,1,belted floral print,4,bird print,1,botanical print,1,brushstroke print,1,butterfly print,1,chevron print,1,daisy print,1,diamond print,1,ditsy floral print,1,elephant print,4,folk print,1,geo print,1,giraffe print,1,grid print,1,heart print,1,ikat print,1,kaleidoscope print,1,leaf print,1,leopard print,1,mandala print,1,marble print,1,medallion print,1,mixed print,1,mosaic print,1,ornate print,1,paisley print,1,palm print,1,print,1,print racerback,4,print satin,2,print scuba,2,print shift,3,print shirt,1,print skater,3,print smock,3,print smocked,3,print strapless,4,print strappy,4,print surplice,4,print tulip,3,print v-neck,4,print woven,1,printed,1,southwestern-print,1
+denim,2,bleached denim,2,classic denim,2,cuffed denim,2,denim,2,denim drawstring,2,denim pencil,3,denim shift,3,denim shirt,2,denim skater,3,denim utility,2
+chiffon,2,beaded chiffon,2,belted chiffon,4,chiffon,2,chiffon floral,1,chiffon lace,2,chiffon layered,2,chiffon maxi,3,chiffon paneled,3,chiffon pleated,3,chiffon shift,3,chiffon shirt,2,chiffon surplice,4,chiffon-paneled,3
+cotton,2,classic cotton,2,cotton,2,cotton drawstring,2,cotton knit,2,cotton-blend,2
+leather,2,faux leather,2,faux leather mini,3,faux leather moto,3,faux leather paneled,3,faux leather pencil,3,faux leather skater,3,faux leather varsity,3,leather,2,leather mini,3,leather moto,3,leather paneled,2,leather pencil,3,leather peplum,4,leather quilted,2,leather skater,3,leather trimmed,4,leather varsity,3,leather-paneled,2,leather-trimmed,4
+knit,2,back knit,4,boxy knit,3,cable knit,2,cable-knit,2,chunky knit,2,classic knit,2,cotton knit,2,crochet knit,2,cropped knit,3,eyelash knit,2,floral knit,2,fuzzy knit,2,heathered knit,2,knit,2,knit lace,2,knit longline,3,knit maxi,3,knit mini,3,knit open,4,knit pencil,3,knit raglan,4,knit shawl,4,knit skater,3,knit stripe,1,knit striped,1,knit trapeze,3,knit v-neck,4,loose-knit,2,open-knit,4,rib-knit,2,ribbed-knit,2,slub-knit,2,stretch-knit,2
+mesh,2,crochet mesh,2,embroidered mesh,2,floral mesh,2,lace mesh,2,mesh,2,mesh overlay,2,mesh panel,2,mesh paneled,2,mesh racerback,4,mesh-paneled,2,mesh-trimmed,4
+fur,2,faux fur,2,fur,2
+lace,2,back lace,4,belted lace,4,boxy lace,3,chiffon lace,2,collar lace,4,crochet lace,2,crocheted lace,2,cutout lace,2,embroidered lace,2,eyelash lace,2,floral lace,2,floral lace mini,3,floral lace sheath,3,floral lace skater,3,knit lace,2,lace,2,lace layered,2,lace maxi,3,lace mesh,2,lace midi,3,lace mini,3,lace overlay,2,lace panel,2,lace paneled,2,lace pencil,3,lace peplum,4,lace pleated,2,lace print,2,lace sheath,3,lace sheer,2,lace shift,3,lace skater,3,lace sleeve,4,lace trim,4,lace-paneled,2,lace-trim,4,lace-trimmed,4,lace-up,4
+long-sleeve,4,long sleeve,4,long-sleeve,4,long-sleeved,4
+sleeveless,4,sleeveless,4
+crew-neck,4,classic crew,4,classic crew neck,4,crew,4,crew neck,4
+v-neck,4,classic v-neck,4,deep v-neck,4,fitted v-neck,4,heathered v-neck,4,knit v-neck,4,print v-neck,4,striped v-neck,4,v-neck,4
+turtle-neck,4,turtle-neck,4
+round-neck,4,round,3
+collar,4,arrow collar,4,beaded collar,4,collar,4,collar lace,4,collared,4,notched collar,4
+collarless,4,collarless,4,collarless faux,4
+tie,4,self-tie,4,tie-back,4,tie-dye,2,tie-front,4,tie-neck,4,
+zip,4,zip,4,zip-front,4,zip-pocket,4,zip-up,4,zipped,4,zipper,4,zippered,4
+loose,5,relaxed,5,loose,2,loose-knit,2
+fit,5,classic fit,3,embroidered fit,3,eyelet fit,3,fit,3,fit flare,3,fit skinny,3,fitted,3,fitted v-neck,4
+skinny,5,classic skinny,3,distressed skinny,3,fit skinny,3,high-rise skinny,3,low-rise skinny,3,mid rise skinny,3,mid-rise skinny,3,rise skinny,3,skinny,3,skinny stretch,3
+retro,5,retro,5
+sporty,5,sporty,5
